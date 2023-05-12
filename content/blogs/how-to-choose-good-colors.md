@@ -1,7 +1,7 @@
 ---
 title: "How to choose good looking colors"
 description: "Learn how you can choose colors that look attractive"
-date: "12/05/2023
+date: "12/05/2023"
 coverImage: "https://cdn.hashnode.com/res/hashnode/image/upload/v1677245130290/fd97fd66-d9dd-4723-bad6-c185240a4d05.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
 author: "Satindar31"
 authorImage: "https://cdn.discordapp.com/avatars/713254655999868931/80b66fbc659acf9d65eb4464e30ef365.webp?size=4096"
