@@ -3,8 +3,7 @@ import { ParsedUrlQuery } from "querystring";
 import { use } from "react";
 import { getBlogBySlug, getBlogs } from "../../../lib/blogs";
 import BlogHeader from "./BlogHeader";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { Blog } from "@/interfaces/Blog";
 
 interface Params extends ParsedUrlQuery {
   slug: string;
@@ -12,6 +11,7 @@ interface Params extends ParsedUrlQuery {
 
 type Props = {
   params: Params;
+  blog2: Blog;
 };
 
 const getInitialBlog = async (slug: string) => {
@@ -19,17 +19,23 @@ const getInitialBlog = async (slug: string) => {
   return blog;
 };
 
-const BlogDetail: NextPage<Props> = ({ params }) => {
+const BlogDetail: NextPage<Props> = ({ params }, { blog2 }) => {
   const blog = use(getInitialBlog(params.slug));
 
   return (
     <div className="w-2/3 m-auto">
+      <head>
+        <title>{blog.title}</title>
+        <meta
+          property="og:image"
+          content={`*.vercel.app/api/og?title=${blog.title}`}
+        />
+      </head>
       <BlogHeader blog={blog} />
       <article className="prose prose-zinc lg:prose-xl">
         <div
           dangerouslySetInnerHTML={{
-            __html: blog.content
-            
+            __html: blog.content,
           }}
         />
       </article>
