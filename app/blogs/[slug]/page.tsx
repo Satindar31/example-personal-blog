@@ -19,7 +19,7 @@ const getInitialBlog = async (slug: string) => {
   return blog;
 };
 
-const BlogDetail: NextPage<Props> = ({ params }, { blog2 }) => {
+const BlogDetail: NextPage<Props> = ({ params }) => {
   const blog = use(getInitialBlog(params.slug));
 
   return (
