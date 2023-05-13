@@ -3,6 +3,8 @@ import { ParsedUrlQuery } from "querystring";
 import { use } from "react";
 import { getBlogBySlug, getBlogs } from "../../../lib/blogs";
 import BlogHeader from "./BlogHeader";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 interface Params extends ParsedUrlQuery {
   slug: string;
@@ -24,7 +26,12 @@ const BlogDetail: NextPage<Props> = ({ params }) => {
     <div className="w-2/3 m-auto">
       <BlogHeader blog={blog} />
       <article className="prose prose-zinc lg:prose-xl">
-        <div dangerouslySetInnerHTML={{ __html: blog.content }} />
+        <div
+          dangerouslySetInnerHTML={{
+            __html: blog.content
+            
+          }}
+        />
       </article>
     </div>
   );
