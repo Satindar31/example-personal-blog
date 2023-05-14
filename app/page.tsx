@@ -1,8 +1,9 @@
-import { NextPage } from "next";
+import { Metadata, NextPage } from "next";
 import { use } from "react";
 import { getBlogs } from "../lib/blogs";
 import Image from "next/image";
 import Link from "next/link";
+import { Blog } from "@/interfaces/Blog";
 
 async function getInitialBlogs() {
   const blogs = getBlogs();
@@ -16,6 +17,34 @@ const shortify = (text: string, maxLength = 60) => {
 
   return text.substring(0, maxLength) + " ...";
 };
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    openGraph: {
+      title: `Example persoanl blog -  Home`,
+      description: "A basic blog app",
+      images: [
+        {
+          url: `/api/og?title='Home'`,
+        },
+      ],
+      locale: "en-US",
+      type: "website",
+      siteName: `Example blog`,
+      url: 'https://example-personal-blog.vercel.app'
+
+    },
+    twitter: {
+      title: 'Example personal blog',
+      description: 'A basic blog app',
+      images: [
+        {
+          url: `/api/og?title=Home`,
+        },
+      ],
+    },
+  };
+}
 
 const Page: NextPage = () => {
   const blogs = use(getInitialBlogs());

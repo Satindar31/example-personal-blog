@@ -3,10 +3,40 @@ import Image from "next/image";
 import { Blog } from "../../../interfaces/Blog";
 import Link from "next/link";
 import { Github, TwitterIcon } from "lucide-react";
+import { Metadata } from "next";
 
 type Props = {
   blog: Blog;
 };
+
+// Dynamic metadata
+export async function generateMetadata(blog: Blog): Promise<Metadata> {
+  return {
+    openGraph: {
+      title: `Example persoanl blog -  ${blog.title}`,
+      description: blog.description,
+      images: [
+        {
+          url: `/api/og?title=${blog.title}`,
+        },
+      ],
+      locale: "en-US",
+      type: "website",
+      siteName: `Example blog - ${blog.title}`,
+      url: 'https://example-personal-blog.vercel.app'
+
+    },
+    twitter: {
+      title: blog.title,
+      description: blog.description,
+      images: [
+        {
+          url: `/api/og?title=${blog.title}`,
+        },
+      ],
+    },
+  };
+}
 
 const BlogHeader: FunctionComponent<Props> = ({ blog }) => {
   return (
@@ -39,16 +69,16 @@ const BlogHeader: FunctionComponent<Props> = ({ blog }) => {
           </div>
         </div>
         <div className="flex self-end">
-          <Link
-            className="text-black"
-            href={"https://github.com/satindar31"}
-          >
+          <Link className="text-black" href={"https://github.com/satindar31"}>
             <Github />
           </Link>
           <Link href={"https://twitter.com/satindar31"} className="text-black">
             <TwitterIcon />
           </Link>
-          <Link href={"https://www.guilded.gg/u/satindar"} className="text-black">
+          <Link
+            href={"https://www.guilded.gg/u/satindar"}
+            className="text-black"
+          >
             Guilded
           </Link>
         </div>
