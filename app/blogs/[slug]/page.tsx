@@ -11,7 +11,6 @@ interface Params extends ParsedUrlQuery {
 
 type Props = {
   params: Params;
-  blog2: Blog;
 };
 
 const getInitialBlog = async (slug: string) => {
