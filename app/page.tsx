@@ -25,7 +25,7 @@ export async function generateMetadata(): Promise<Metadata> {
       description: "A basic blog app",
       images: [
         {
-          url: `/api/og?title='Home'`,
+          url: `/api/og`,
         },
       ],
       locale: "en-US",
@@ -39,9 +39,10 @@ export async function generateMetadata(): Promise<Metadata> {
       description: 'A basic blog app',
       images: [
         {
-          url: `/api/og?title=Home`,
+          url: `/api/og`,
         },
       ],
+      card: "summary_large_image"
     },
   };
 }

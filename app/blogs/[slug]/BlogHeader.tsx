@@ -10,30 +10,31 @@ type Props = {
 };
 
 // Dynamic metadata
-export async function generateMetadata(blog: Blog): Promise<Metadata> {
+export async function generateMetadata(): Promise<Metadata> {
   return {
     openGraph: {
-      title: `Example persoanl blog -  ${blog.title}`,
-      description: blog.description,
+      title: `Example persoanl blog - Article`,
+      description: "A basic blog designed with NextJS 13",
       images: [
         {
-          url: `/api/og?title=${blog.title}`,
+          url: `/api/og`,
         },
       ],
       locale: "en-US",
       type: "website",
-      siteName: `Example blog - ${blog.title}`,
+      siteName: `Example blog`,
       url: 'https://example-personal-blog.vercel.app'
 
     },
     twitter: {
-      title: blog.title,
-      description: blog.description,
+      title: "Example blog",
+      description: "A basic blog designed with NextJS 13",
       images: [
         {
-          url: `/api/og?title=${blog.title}`,
+          url: `/api/og`,
         },
       ],
+      card: "summary_large_image"
     },
   };
 }

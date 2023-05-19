@@ -1,11 +1,8 @@
 import { ImageResponse } from "@vercel/og";
-import Image from "next/image";
-import { NextRequest } from "next/server";
-import { Blog } from "@/interfaces/Blog";
 
 export const runtime = "edge";
 
-export function GET<Props>(request: NextRequest, blog: Blog) {
+export function GET() {
   return new ImageResponse(
     (
       <div
