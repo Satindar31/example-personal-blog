@@ -81,9 +81,14 @@ const Page: NextPage = () => {
                   </p>
                 </div>
                 <div className="group relative">
-                  <Image alt="Cover image" src={blog.coverImage} width={250} height={100} />
+                  <Image
+                    alt="Cover image"
+                    src={blog.coverImage}
+                    width={250}
+                    height={100}
+                  />
                   <h4 className="mt-3 text-lg font-semibold leading-6 text-black group-hover:text-gray-600">
-                    {blog.title}
+                    <Link href={`/blogs/${blog.slug}`}>{blog.title}</Link>
                   </h4>
                 </div>
                 <div className="relative mt-8 flex items-center gap-x-4">
