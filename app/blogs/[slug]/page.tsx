@@ -1,4 +1,4 @@
-import { GetStaticPaths, GetStaticPaths, NextPage } from "next";
+import { NextPage } from "next";
 import { ParsedUrlQuery } from "querystring";
 import { use } from "react";
 import { getBlogBySlug, getBlogs } from "../../../lib/blogs";
