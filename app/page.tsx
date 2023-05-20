@@ -84,6 +84,7 @@ const Page: NextPage = () => {
                 </div>
                 <div className="group relative">
                   <Image
+                  className="rounded-md"
                     alt="Cover image"
                     src={blog.coverImage}
                     width={250}
