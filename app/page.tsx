@@ -25,6 +25,8 @@ function shortify(text: string, maxLength: number) {
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
+    title: `Example persoanl blog -  Home`,
+    description: "A basic blog app",
     openGraph: {
       title: `Example persoanl blog -  Home`,
       description: "A basic blog app",
@@ -88,7 +90,7 @@ const Page: NextPage = () => {
                     height={100}
                   />
                   <h4 className="mt-3 text-lg font-semibold leading-6 text-black group-hover:text-gray-600">
-                    <Link href={`/blogs/${blog.slug}`}>{blog.title}</Link>
+                    <Link className="mt-3 text-lg font-semibold leading-6 text-black group-hover:text-gray-600" href={`/blogs/${blog.slug}`}>{blog.title}</Link>
                   </h4>
                 </div>
                 <div className="relative mt-8 flex items-center gap-x-4">
