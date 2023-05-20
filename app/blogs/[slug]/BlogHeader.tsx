@@ -76,12 +76,6 @@ const BlogHeader: FunctionComponent<Props> = ({ blog }) => {
           <Link href={"https://twitter.com/satindar31"} className="text-black">
             <TwitterIcon />
           </Link>
-          <Link
-            href={"https://www.guilded.gg/u/satindar"}
-            className="text-black"
-          >
-            Guilded
-          </Link>
         </div>
       </div>
       <h1 className="font-bold text-4xl mb-1">{blog.title}</h1>

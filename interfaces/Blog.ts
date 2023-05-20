@@ -7,4 +7,5 @@ export interface Blog {
     content: string;
     slug: string;
     date: string;
+    category: string
 }

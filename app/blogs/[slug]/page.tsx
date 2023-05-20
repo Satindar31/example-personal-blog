@@ -1,9 +1,8 @@
-import { NextPage } from "next";
+import { GetServerSideProps, NextPage } from "next";
 import { ParsedUrlQuery } from "querystring";
 import { use } from "react";
 import { getBlogBySlug, getBlogs } from "../../../lib/blogs";
 import BlogHeader from "./BlogHeader";
-import { Blog } from "@/interfaces/Blog";
 
 interface Params extends ParsedUrlQuery {
   slug: string;
@@ -23,13 +22,6 @@ const BlogDetail: NextPage<Props> = ({ params }) => {
 
   return (
     <div className="w-2/3 m-auto">
-      <head>
-        <title>{blog.title}</title>
-        <meta
-          property="og:image"
-          content={`*.vercel.app/api/og?title=${blog.title}`}
-        />
-      </head>
       <BlogHeader blog={blog} />
       <article className="prose prose-zinc lg:prose-xl">
         <div
@@ -42,7 +34,7 @@ const BlogDetail: NextPage<Props> = ({ params }) => {
   );
 };
 
-export function generateStaticParams() {
+export function getServerSideProps() {
   const blogs = getBlogs();
 
   return blogs.map((blog) => ({

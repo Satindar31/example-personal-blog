@@ -5,6 +5,7 @@ date: "12/05/2023"
 coverImage: "https://cdn.hashnode.com/res/hashnode/image/upload/v1677245130290/fd97fd66-d9dd-4723-bad6-c185240a4d05.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
 author: "Satindar31"
 authorImage: "https://cdn.discordapp.com/avatars/713254655999868931/80b66fbc659acf9d65eb4464e30ef365.webp?size=4096"
+category: "UI"
 ---
 # How to choose good colors for an app
 Whether you are just starting as a developer or have decades of experience, choosing good colors is tricky. It takes hours if not days to get your website's colors to look just right, and quite frankly, you are probably still not satisfied with them. So how do you get those colors to look perfect? Well, there is no simple answer to that question. It will take time to get the mix just how you want it but there are things to speed up the process. In this blog, I will show you \[X\] amount of ways you can choose a good color palette for your website.

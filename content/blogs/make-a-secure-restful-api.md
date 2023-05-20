@@ -5,6 +5,7 @@ date: "12/5/23"
 coverImage: "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/JKUTrJ4vK00/upload/23bbfe79f56603263f04ea4ab1c684ee.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
 author: "Satindar31"
 authorImage: "https://cdn.discordapp.com/avatars/713254655999868931/80b66fbc659acf9d65eb4464e30ef365.webp?size=4096"
+category: "Backend"
 ---
 ## Introduction
 
