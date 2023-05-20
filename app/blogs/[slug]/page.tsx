@@ -1,4 +1,4 @@
-import { GetServerSideProps, NextPage } from "next";
+import { GetStaticPaths, GetStaticPaths, NextPage } from "next";
 import { ParsedUrlQuery } from "querystring";
 import { use } from "react";
 import { getBlogBySlug, getBlogs } from "../../../lib/blogs";
@@ -34,7 +34,7 @@ const BlogDetail: NextPage<Props> = ({ params }) => {
   );
 };
 
-export function getStatisProps() {
+export function getStaticPaths() {
   const blogs = getBlogs();
 
   return blogs.map((blog) => ({
