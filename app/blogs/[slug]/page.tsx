@@ -34,7 +34,7 @@ const BlogDetail: NextPage<Props> = ({ params }) => {
   );
 };
 
-export function getServerSideProps() {
+export function getStatisProps() {
   const blogs = getBlogs();
 
   return blogs.map((blog) => ({
