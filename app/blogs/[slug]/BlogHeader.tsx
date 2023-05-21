@@ -69,6 +69,8 @@ const BlogHeader: FunctionComponent<Props> = ({ blog }) => {
             </div>
           </div>
         </div>
+        <Link className="text-gray-500" href={'#'}>Back</Link>
+
         <div className="flex self-end">
           <Link className="text-black" href={"https://github.com/satindar31"}>
             <Github />
@@ -79,11 +81,11 @@ const BlogHeader: FunctionComponent<Props> = ({ blog }) => {
         </div>
       </div>
       <h1 className="font-bold text-4xl mb-1">{blog.title}</h1>
-      <h2 className="blog-detail-header-subtitle mb-2 text-xl text-gray-600">
+      <h2 className="text-center blog-detail-header-subtitle mb-2 text-xl text-gray-600">
         {blog.description}
       </h2>
-      <div className="h-96 bg-black mx-auto w-full relative">
-        <Image priority fill src={blog.coverImage} alt="" />
+      <div className="h-96 rounded-md bg-black mx-auto w-full relative">
+        <Image className="rounded-lg" priority fill src={blog.coverImage} alt={`${blog.title} cover image`} />
       </div>
     </div>
   );
