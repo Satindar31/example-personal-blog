@@ -22,7 +22,7 @@ const BlogDetail: NextPage<Props> = ({params}) => {
   const blog = use(getInitialBlog(params.slug));
   ReactGA.send({
     hitType: 'pageview',
-    page: document.location.pathname
+    page: window.location.pathname
   })
   return (
     <div className="w-2/3 m-auto">

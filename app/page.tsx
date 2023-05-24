@@ -57,7 +57,7 @@ export async function generateMetadata(): Promise<Metadata> {
 const Page: NextPage = () => {
   ReactGA.send({
     hitType: 'pageview',
-    page: document.location.pathname
+    page: window.location.pathname
   })
   const blogs = use(getInitialBlogs());
 
