@@ -1,6 +1,8 @@
+'use client'
+
 import { NextPage } from "next";
 import { ParsedUrlQuery } from "querystring";
-import { use } from "react";
+import { use, useEffect } from "react";
 import { getBlogBySlug, getBlogs } from "../../../lib/blogs";
 import BlogHeader from "./BlogHeader";
 import ReactGA from 'react-ga4'
@@ -19,11 +21,15 @@ const getInitialBlog = async (slug: string) => {
 }
 
 const BlogDetail: NextPage<Props> = ({params}) => {
+  useEffect(() => {
+    ReactGA.send({
+      hitType: 'pageview',
+      page: window.location.pathname
+    })
+  }, [])
+  
   const blog = use(getInitialBlog(params.slug));
-  ReactGA.send({
-    hitType: 'pageview',
-    page: window.location.pathname
-  })
+
   return (
     <div className="w-2/3 m-auto">
       <BlogHeader blog={blog} />
