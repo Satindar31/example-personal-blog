@@ -2,7 +2,10 @@ import Script from "next/script";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { Metadata } from "next";
+import ReactGA from "react-ga4";
 
+
+ReactGA.initialize(process.env.GA ?? "");
 const inter = Inter({ subsets: ["latin"] });
 
 export async function generateMetadata(): Promise<Metadata> {
