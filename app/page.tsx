@@ -4,6 +4,7 @@ import { getBlogs } from "../lib/blogs";
 import Image from "next/image";
 import Link from "next/link";
 import { Blog } from "@/interfaces/Blog";
+import ReactGA from "react-ga4";
 
 async function getInitialBlogs() {
   const blogs = getBlogs();
@@ -54,6 +55,10 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const Page: NextPage = () => {
+  ReactGA.send({
+    hitType: 'pageview',
+    page: document.location.pathname
+  })
   const blogs = use(getInitialBlogs());
 
   return (

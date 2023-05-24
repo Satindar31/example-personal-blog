@@ -3,6 +3,7 @@ import { ParsedUrlQuery } from "querystring";
 import { use } from "react";
 import { getBlogBySlug, getBlogs } from "../../../lib/blogs";
 import BlogHeader from "./BlogHeader";
+import ReactGA from 'react-ga4'
 
 interface Params extends ParsedUrlQuery {
   slug: string;
@@ -19,7 +20,10 @@ const getInitialBlog = async (slug: string) => {
 
 const BlogDetail: NextPage<Props> = ({params}) => {
   const blog = use(getInitialBlog(params.slug));
-
+  ReactGA.send({
+    hitType: 'pageview',
+    page: document.location.pathname
+  })
   return (
     <div className="w-2/3 m-auto">
       <BlogHeader blog={blog} />
