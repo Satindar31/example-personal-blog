@@ -4,14 +4,13 @@ import { getBlogs } from "../lib/blogs";
 import Image from "next/image";
 import Link from "next/link";
 import { Blog } from "@/interfaces/Blog";
-import ReactGA from "react-ga4";
 
 async function getInitialBlogs() {
   const blogs = getBlogs();
   return blogs;
 }
 /**
- *
+ * 
  * @param text Text to make shorter
  * @param maxLength Maximum number of charactors
  * @returns String of length `maxLength`
@@ -55,10 +54,8 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const Page: NextPage = () => {
-  ReactGA.send({
-    hitType: 'pageview',
-    page: window.location.pathname
-  })
+
+  
   const blogs = use(getInitialBlogs());
 
   return (
