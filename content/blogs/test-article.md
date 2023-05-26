@@ -22,11 +22,16 @@ This is a paragraph
 | 3 |   |   |   |   |
 | 4 |   |   |   |   |
   
-<a href="https://google.com">HTML a tag</a>
+a<sup>super tag</sup>
   
 ---
 
 Divider
 
 ---
+
+```js
+code block
+```
+
 And much more...
