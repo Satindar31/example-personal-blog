@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Blog } from "@/interfaces/Blog";
 import Head from "next/head";
-import { clarity } from "react-microsoft-clarity";
 
 
 
@@ -58,14 +57,11 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const Page: NextPage = () => {
-  function test(){
-    alert(1)
-  }
   
   const blogs = use(getInitialBlogs());
 
   return (
-    <div onLoad={test} className="h-screen prose-invert w-2/3 m-auto prose lg:prose-xl">
+    <div className="h-screen prose-invert w-2/3 m-auto prose lg:prose-xl">
       <div className="bg-white">
         <div>
           <div className="text-center">
