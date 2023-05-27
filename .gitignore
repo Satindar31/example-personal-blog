@@ -10,6 +10,9 @@
 
 # next.js
 /.next/
+/.next
+.next/
+.next
 /out/
 
 # production
@@ -33,4 +36,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-/app/create-post/
