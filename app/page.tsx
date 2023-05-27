@@ -4,6 +4,7 @@ import { getBlogs } from "../lib/blogs";
 import Image from "next/image";
 import Link from "next/link";
 import { Blog } from "@/interfaces/Blog";
+import Head from "next/head";
 
 async function getInitialBlogs() {
   const blogs = getBlogs();
@@ -60,6 +61,9 @@ const Page: NextPage = () => {
 
   return (
     <div className="h-screen prose-invert w-2/3 m-auto prose lg:prose-xl">
+      <Head>
+      <meta name="google-site-verification" content={process.env.GSV} />
+      </Head>
       <div className="bg-white">
         <div>
           <div className="text-center">

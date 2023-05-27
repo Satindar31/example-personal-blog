@@ -46,7 +46,7 @@ export default function NewPost() {
     return (
         <div className="prose prose-zinc lg:prose-xl flex flex-col justify-center items-center">
             <form onSubmit={createPost}>
-            <ReactQuill modules={moduless} placeholder={"Start writing your epic blog post..."} className="text-black" value={value} onChange={setValue}/>
+            <ReactQuill theme="snow" modules={moduless} placeholder={"Start writing your epic blog post..."} className="text-black" value={value} onChange={setValue}/>
             <input placeholder="0000" value={passcode} onChange={(ev) => setPasscode(ev.target.value)} type="number" />
             <button className="border-zinc-200 border-opacity-30 rounded-md border-2">Submit</button>
             </form>
