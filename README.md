@@ -46,6 +46,6 @@ This demo was helped to allow people to understand basic typescript and NextJS f
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to deploy with vecel  
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsatindar31%2Fexample-personal-blog&env=PASSCODE&envDescription=The%20passcode%20enviorment%20variable%20is%20the%20variable%20which%20is%20checked%20for%20being%20correct%20on%20the%20backend%20when%20creating%20a%20new%20post%20from%20%2Fnew-post&project-name=personal-blog&repository-name=my-amazing-blog&redirect-url=https%3A%2F%2Fgithub.com%2Fsatindar31%2Fexample-personal-blog&demo-title=Example%20blog&demo-description=Created%20with%20NextJS&demo-url=example-personal-blog.vercel.app%2F&demo-image=example-personal-blog.vercel.app%2Fapi%2Fog)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSatindar31%2Fexample-personal-blog&env=PASSCODE,CLARITY_TAG,GTM&envDescription=CLARITY_TAG%20is%20the%20tag%20for%20microsoft%20clarity%20and%20GTM%20is%20for%20google%20tag%20manager&redirect-url=https%3A%2F%2Fgithub.com%2FSatindar31%2Fexample-personal-blog)
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
