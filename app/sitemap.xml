@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://example-personal-blog.vercel.app/</loc>
+  <lastmod>2023-05-27T07:06:15+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://example-personal-blog.vercel.app/blogs/how-to-choose-good-colors</loc>
+  <lastmod>2023-05-27T07:06:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://example-personal-blog.vercel.app/blogs/make-a-secure-restful-api</loc>
+  <lastmod>2023-05-27T07:06:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://example-personal-blog.vercel.app/blogs/test-article</loc>
+  <lastmod>2023-05-27T07:06:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://example-personal-blog.vercel.app/new-post</loc>
+  <lastmod>2023-05-27T07:06:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
