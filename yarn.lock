@@ -3640,6 +3640,11 @@ natural-compare@^1.4.0:
   resolved "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
 
+next-gtm@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/next-gtm/-/next-gtm-1.0.0.tgz#32f784319b0ba4ca96bf63ca3aae576687536f15"
+  integrity sha512-7TVoi8NMlxE0bvLDWJLNcUC6FebK3MYEZiG6FDcezPNpDpsiIwrbpXTHTC1Hq8DPpmZjWEaEwn5bmnDrOnLY+g==
+
 next@13.4.1:
   version "13.4.1"
   resolved "https://registry.npmjs.org/next/-/next-13.4.1.tgz"
@@ -4161,6 +4166,11 @@ react-ga4@^2.1.0:
   resolved "https://registry.yarnpkg.com/react-ga4/-/react-ga4-2.1.0.tgz#56601f59d95c08466ebd6edfbf8dede55c4678f9"
   integrity sha512-ZKS7PGNFqqMd3PJ6+C2Jtz/o1iU9ggiy8Y8nUeksgVuvNISbmrQtJiZNvC/TjDsqD0QlU5Wkgs7i+w9+OjHhhQ==
 
+react-gtm-ts@^1.0.44:
+  version "1.0.44"
+  resolved "https://registry.yarnpkg.com/react-gtm-ts/-/react-gtm-ts-1.0.44.tgz#3a7f88e002c470ba56de64b7959887cac385a82b"
+  integrity sha512-C1RdoxOy2iTYKKrEjswJlcRfktpRdeK+fMW4FFl5qqaFRSkqj87JrBdLfn/nGpSlrRFdvGt4hMH7p5msFeKODg==
+
 react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
@@ -4170,6 +4180,11 @@ react-is@^18.0.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
+
+react-microsoft-clarity@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-microsoft-clarity/-/react-microsoft-clarity-1.2.0.tgz#949f953cec4d4f9d7b4eaab01c240dfa48fb44c8"
+  integrity sha512-a1bsJR1uN1daWq3cBc7NheEGPXrotMRE0oFeRio7kXvHawzQfqu5iX9BoYFF9zRUL0dn+Mz57h1fNlcv3pqXEg==
 
 react-quill@^2.0.0:
   version "2.0.0"

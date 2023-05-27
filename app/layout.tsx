@@ -2,10 +2,16 @@ import Script from "next/script";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { Metadata } from "next";
-import ReactGA from "react-ga4";
 import { Analytics } from '@vercel/analytics/react';
+import { ReactTagManager } from 'react-gtm-ts';
 
 const inter = Inter({ subsets: ["latin"] });
+
+ReactTagManager.init({
+  code: process.env.GTM ?? "", // GTM Code
+  debug: false, // debug mode (default false)
+  performance: false, // starts GTM only after user interaction (improve initial page load)
+});
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -36,12 +42,10 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default function RootLayout({
-  children,
-}: {
+export default function RootLayout({children}: {
   children: React.ReactNode;
-}) {
 
+}) {
   
   return (
     <html lang="en">

@@ -1,10 +1,13 @@
 import { Metadata, NextPage } from "next";
-import { use } from "react";
+import { ReactNode, use } from "react";
 import { getBlogs } from "../lib/blogs";
 import Image from "next/image";
 import Link from "next/link";
 import { Blog } from "@/interfaces/Blog";
 import Head from "next/head";
+import { clarity } from "react-microsoft-clarity";
+
+
 
 async function getInitialBlogs() {
   const blogs = getBlogs();
@@ -55,20 +58,20 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const Page: NextPage = () => {
-
+  function test(){
+    alert(1)
+  }
   
   const blogs = use(getInitialBlogs());
 
   return (
-    <div className="h-screen prose-invert w-2/3 m-auto prose lg:prose-xl">
-      <Head>
-      <meta name="google-site-verification" content={process.env.GSV} />
-      </Head>
+    <div onLoad={test} className="h-screen prose-invert w-2/3 m-auto prose lg:prose-xl">
       <div className="bg-white">
         <div>
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Latest articles
+              
             </h2>
             <p className="mt-2 text-lg leading-8 text-gray-600">
               Freshly brewed articles from the blog
